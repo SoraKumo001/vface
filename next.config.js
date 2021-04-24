@@ -1,3 +1,3 @@
 module.exports = {
-  basePath: '.',
+  basePath: process.env.GITHUB_REPOSITORY,
 };
