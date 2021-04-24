@@ -39,7 +39,7 @@ const Page = () => {
             ref={(video) => video && video.srcObject !== stream && (video.srcObject = stream)}
           />
         )}
-        {segment?.allPoses[0].keypoints
+        {segment?.allPoses[0]?.keypoints
           .filter((pos) =>
             ['nose', 'leftEye', 'rightEye', 'leftEar', 'rightEar'].includes(pos.part)
           )
